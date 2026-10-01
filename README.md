@@ -38,18 +38,28 @@ Ce projet est une application web moderne (type SPA - Single Page Application) g
 # 3. Générer les fichiers statiques de production (dossier dist/)
 `npm run build`
 
+### Étape 3 : Installation des dépendances et Build
+Exécutez les commandes suivantes dans votre terminal :
+
+```bash
+# 1. Se placer dans le dossier du projet
+cd ~/chemin-vers-votre-projet/h-auto
+
+# 2. Installer les dépendances Node.js
+npm install
+
+# 3. Générer les fichiers statiques de production (dossier dist/)
+npm run build
+
 ### Étape 4 : Configuration sur o2switch (Setup Node.js App / Hébergement Statique)
-Si votre projet est purement statique (uniquement du HTML/JS/CSS généré dans dist/) :
 
-Pointez le sous-domaine ou domaine de votre site (via Domaines ou Gestionnaire de fichiers) directement sur le dossier de build : /home/votre_user/chemin-vers-votre-projet/h-auto/dist.
+* **Si votre projet est purement statique** (uniquement du HTML/JS/CSS généré dans `dist/`) :
+  * Pointez le sous-domaine ou domaine de votre site (via **Domaines** ou **Gestionnaire de fichiers**) directement sur le dossier de build : `/home/votre_user/chemin-vers-votre-projet/h-auto/dist`.
 
-* Si votre projet intègre un serveur Node.js : * 
-
-* Allez dans Setup Node.js App dans votre cPanel.* 
-
-* Créez une application en renseignant :* 
-
-* Application root : Le dossier racine de votre application. * 
+* **Si votre projet intègre un serveur Node.js** :
+  1. Allez dans **Setup Node.js App** dans votre cPanel.
+  2. Créez une application en renseignant :
+     * **Application root** : Le dossier racine de votre application.
 
 * Application startup file : Le fichier de démarrage du serveur (ex: server.js ou dist/server.js). * 
 
