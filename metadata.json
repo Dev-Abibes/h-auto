@@ -1,0 +1,6 @@
+{
+  "name": "H-AUTO",
+  "description": "Garage H-AUTO à Cormontreuil (51350) : réparation automobile, mécanique générale toutes marques, révision, freinage, distribution et diagnostic électronique. Devis gratuit.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

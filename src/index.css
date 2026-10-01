@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Premium "Bleu Foncé" (Deep Navy & Dark Blue Palette) */
+  --color-blue-50: #f0f4f9;
+  --color-blue-100: #deebf7;
+  --color-blue-200: #bccee6;
+  --color-blue-300: #92aecd;
+  --color-blue-400: #648bb2;
+  --color-blue-500: #1d4066;
+  --color-blue-600: #0e2b4e; /* Gorgeous Deep Dark Blue (Primary Accent) */
+  --color-blue-700: #0a203c;
+  --color-blue-800: #07162b;
+  --color-blue-900: #040d1b;
+  --color-blue-950: #02070e;
+
+  --color-indigo-50: #f2f5f8;
+  --color-indigo-100: #e3ebf2;
+  --color-indigo-200: #c2d2e1;
+  --color-indigo-300: #9cb5cb;
+  --color-indigo-400: #7193b0;
+  --color-indigo-500: #42678c;
+  --color-indigo-600: #254366;
+  --color-indigo-700: #152941;
+  --color-indigo-800: #0b1726;
+  --color-indigo-900: #060d17;
+  --color-indigo-950: #03060a;
+}
+
+/* Custom glow utility for Sleek Interface text highlights */
+.text-shadow-glow {
+  text-shadow: 0 0 12px rgba(249, 115, 22, 0.6), 0 0 24px rgba(249, 115, 22, 0.3);
+}
+
+/* Custom styling override for custom input fields & placeholders */
+input::placeholder, textarea::placeholder {
+  color: #64748b; /* slate-500 */
+}
+
