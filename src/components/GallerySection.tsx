@@ -48,9 +48,6 @@ export default function GallerySection() {
 
   return (
     <section className="py-20 bg-gradient-to-b from-zinc-100 via-zinc-200 to-zinc-100 text-slate-800 relative overflow-hidden" id="galerie">
-      {/* Background gear watermark element as requested by the user */}
-      <div className="absolute left-0 bottom-0 top-0 w-1/4 opacity-[0.01] bg-contain bg-left bg-no-repeat pointer-events-none" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1508962914676-134849a727f0?auto=format&fit=crop&q=80&w=600')" }}></div>
-
       <div className="max-w-7xl mx-auto px-4 relative z-10">
         
         {/* Section Header */}
@@ -91,7 +88,7 @@ export default function GallerySection() {
         </div>
 
         {/* Photos Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" id="gallery-grid">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="gallery-grid">
           {filteredItems.map((item) => (
             <motion.div
               layout
@@ -104,6 +101,7 @@ export default function GallerySection() {
               <img
                 src={item.url}
                 alt={item.caption}
+                referrerPolicy="no-referrer"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
               
@@ -171,6 +169,7 @@ export default function GallerySection() {
                 transition={{ duration: 0.25 }}
                 src={activeImage.url}
                 alt={activeImage.caption}
+                referrerPolicy="no-referrer"
                 className="max-h-[70vh] max-w-[85vw] object-contain rounded-2xl border border-slate-800 shadow-2xl"
                 onClick={(e) => e.stopPropagation()}
               />

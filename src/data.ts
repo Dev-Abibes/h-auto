@@ -1,13 +1,17 @@
 import { Service, GalleryItem, OpeningHour, Appointment, Testimonial } from './types';
 
 // @ts-ignore
-import imgFacadeSign from './assets/images/garage_facade_sign_1784092510715.jpg';
+import imgHAutoFacade from './assets/images/hauto_garage_facade_1791057544692.jpg';
+// @ts-ignore
+import imgWorkshopCar from './assets/images/workshop_car_lift_1791057556339.jpg';
+// @ts-ignore
+import imgCarParts from './assets/images/car_parts_replacement_1791057567505.jpg';
+// @ts-ignore
+import imgEngineRevision from './assets/images/engine_revision_service_1791057579053.jpg';
+// @ts-ignore
+import imgDiagnosticValise from './assets/images/diagnostic_valise_tablet_1791057592316.jpg';
 // @ts-ignore
 import imgOfficeInterior from './assets/images/garage_office_interior_1784092527945.jpg';
-// @ts-ignore
-import imgExteriorView from './assets/images/garage_exterior_view_1784092540844.jpg';
-// @ts-ignore
-import imgMeganeGrey from './assets/images/garage_megane_grey_1784092551181.jpg';
 
 export const SERVICES: Service[] = [
   {
@@ -204,48 +208,42 @@ export const SERVICES: Service[] = [
 ];
 
 export const GALLERY_ITEMS: GalleryItem[] = [
-  // Notre Garage Category (matching the uploaded pictures structure)
+  // Notre Garage Category
   {
-    id: 'garage_ext_1',
-    url: imgExteriorView,
-    caption: 'Vue générale de notre atelier H-AUTO au 5 rue des remouleurs à Cormontreuil',
+    id: 'garage_facade_hauto',
+    url: imgHAutoFacade,
+    caption: 'Façade officielle de notre atelier H-AUTO au 5 rue des remouleurs à Cormontreuil',
+    category: 'garage'
+  },
+  {
+    id: 'workshop_vehicle_lift',
+    url: imgWorkshopCar,
+    caption: 'Véhicule pris en charge sur pont élévateur dans notre atelier mécanique H-AUTO',
     category: 'garage'
   },
   {
     id: 'garage_office_interior',
     url: imgOfficeInterior,
-    caption: 'Notre bureau d’accueil chaleureux et moderne aux couleurs marine et blanche pour vous recevoir',
+    caption: 'Notre bureau d’accueil chaleureux et moderne pour vous recevoir à l’atelier H-AUTO',
     category: 'office'
   },
+  // Pièces Mécaniques & Interventions Category
   {
-    id: 'garage_facade_sign',
-    url: imgFacadeSign,
-    caption: 'Notre enseigne officielle H-AUTO répertoriant nos prestations de mécanique générale',
-    category: 'garage'
-  },
-  {
-    id: 'garage_megane_grey',
-    url: imgMeganeGrey,
-    caption: 'Véhicule client (Renault Mégane 5 grise) stationné devant notre atelier',
-    category: 'garage'
-  },
-  // Pièces Mécaniques Category
-  {
-    id: 'part_engine',
-    url: 'https://images.unsplash.com/photo-1486006920555-c77dce18193b?auto=format&fit=crop&q=80&w=1200',
-    caption: 'Bloc moteur et composants mécaniques haute performance',
+    id: 'part_engine_revision',
+    url: imgEngineRevision,
+    caption: 'Moteur à réviser : inspection complète et révision mécanique sous capot en atelier',
     category: 'mechanical'
   },
   {
-    id: 'part_brake',
-    url: 'https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&q=80&w=1200',
-    caption: 'Système de freinage : remplacement de disque et plaquette de frein ventilé',
+    id: 'part_diagnostic_valise',
+    url: imgDiagnosticValise,
+    caption: 'Grande valise de diagnostic électronique multimarque connectée en direct au véhicule',
     category: 'mechanical'
   },
   {
-    id: 'part_gears',
-    url: 'https://images.unsplash.com/photo-1508962914676-134849a727f0?auto=format&fit=crop&q=80&w=1200',
-    caption: 'Engrenages mécaniques internes d’une transmission',
+    id: 'part_replacement_parts',
+    url: imgCarParts,
+    caption: 'Pièces neuves à changer : disques et plaquettes de frein ventilés, kit de distribution et filtres',
     category: 'mechanical'
   }
 ];
@@ -263,7 +261,7 @@ export const OPENING_HOURS: OpeningHour[] = [
 export const SEED_APPOINTMENTS: Appointment[] = [
   {
     id: 'apt_1',
-    ref: 'AD-2026-8941',
+    ref: 'HA-2026-8941',
     clientName: 'Marc Dubois',
     clientEmail: 'marc.dubois@email.com',
     clientPhone: '06 12 34 56 78',
@@ -280,7 +278,7 @@ export const SEED_APPOINTMENTS: Appointment[] = [
   },
   {
     id: 'apt_2',
-    ref: 'AD-2026-4512',
+    ref: 'HA-2026-4512',
     clientName: 'Sophie Lambert',
     clientEmail: 'sophie.l@email.com',
     clientPhone: '07 89 45 12 36',
@@ -297,7 +295,7 @@ export const SEED_APPOINTMENTS: Appointment[] = [
   },
   {
     id: 'apt_3',
-    ref: 'AD-2026-7821',
+    ref: 'HA-2026-7821',
     clientName: 'Jean-Pierre Martin',
     clientEmail: 'jp.martin@email.com',
     clientPhone: '06 55 99 88 77',
@@ -406,3 +404,5 @@ export const TESTIMONIALS: Testimonial[] = [
     likes: 12
   }
 ];
+
+

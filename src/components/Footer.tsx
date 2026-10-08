@@ -30,10 +30,6 @@ export default function Footer({ setActiveSection }: FooterProps) {
 
   return (
     <footer className="bg-gradient-to-br from-red-700 via-red-600 to-red-800 text-white relative border-t border-red-800" id="footer">
-      
-      {/* Background decoration */}
-      <div className="absolute right-0 top-0 w-1/4 h-full opacity-[0.015] bg-contain bg-right bg-no-repeat pointer-events-none" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1508962914676-134849a727f0?auto=format&fit=crop&q=80&w=600')" }}></div>
-
       <div className="max-w-7xl mx-auto px-4 py-16 relative z-10 text-left">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10">
           

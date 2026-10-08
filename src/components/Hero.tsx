@@ -4,7 +4,7 @@ import { motion } from 'motion/react';
 import Logo from './Logo';
 
 // @ts-ignore
-import imgSuspensionBg from '../assets/images/mechanical_suspension_1784464145906.jpg';
+import imgSuspensionBg from '../assets/images/workshop_car_lift_1791057556339.jpg';
 
 interface HeroProps {
   onBookClick: () => void;
@@ -96,15 +96,12 @@ export default function Hero({ onBookClick, onExploreServicesClick }: HeroProps)
                 <span>Nos prestations</span>
               </button>
               <button
-                onClick={() => {
-                  const el = document.getElementById('occasions-pieces');
-                  if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }}
+                onClick={onBookClick}
                 className="bg-slate-900 hover:bg-slate-800 text-white font-bold px-6 py-4 rounded-xl text-base transition-all duration-300 shadow-sm hover:shadow-md hover:scale-[1.04] hover:-translate-y-1 flex items-center justify-center space-x-2 active:scale-95"
-                id="hero-occasions-btn"
+                id="hero-quote-btn"
               >
-                <Car className="w-4 h-4 text-sky-400" />
-                <span>Occasions & Pièces</span>
+                <Calendar className="w-4 h-4 text-sky-400" />
+                <span>Demander un devis</span>
               </button>
             </motion.div>
 
